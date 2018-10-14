@@ -1,2 +1,2 @@
 # automationTask
-automation base case
+Basic case for Python automation 
