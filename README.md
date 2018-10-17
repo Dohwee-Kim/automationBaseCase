@@ -1,11 +1,11 @@
 # Basic Automation Suite
 This Python script with Pytest is for simple webpage loading test
 =======
-##Basic case for Python automation 
+Basic case for Python automation 
 
-####This is a basic test automation examples for Google Homepage written in Python 3.7 using Selenium WebDriver and Pytest.
+This is a basic test automation examples for Google Homepage written in Python 3.7 using Selenium WebDriver and Pytest.
 
-####Requirements:
+Requirements:
 ```python
 atomicwrites    1.2.1    
 attrs           18.2.0   
