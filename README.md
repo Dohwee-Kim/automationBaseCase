@@ -34,7 +34,7 @@ wheel           0.32.1
 You will need to install above the requirements first using following command in command line.
 This will generate report.html file for tests result in HTML format on the test source folder. 
 ```python
-pip install -r requirements.txt
+pip install -r requirements.txt --ignore-installed
 ```
 
 To run use the following command run from the cloned directory:
