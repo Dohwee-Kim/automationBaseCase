@@ -47,10 +47,10 @@ pytest -v -k <'chrome'|'firefox'> testCasesGoogle.py --html=report.html
 ```
 
 Important Source Code Breakdown:
-```python 
+```
 confest.py 
-  - Configuration for pre-tests loading. Using fixture, this will load appropriate web-browser at the beginning of the
-   tests(class), and close it at the end of the tests(class)
+  - Configuration for pre-tests loading. Using fixture, this will load appropriate web-browser
+ at the beginning of the tests(class), and close it at the end of the tests(class)
 
 testCasesGoogle.py
   - pytest is run against these test files. 
@@ -62,4 +62,4 @@ constants.py
   
 report.html 
   - Generated test report by --html=<filename> option.
-```python
+```
