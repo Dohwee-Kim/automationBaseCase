@@ -26,9 +26,40 @@ urllib3         1.23
 wheel           0.32.1  
 ```
 
-To run the above test you will need to install above the requirements first using foloowing command in command line.
+You will need to install above the requirements first using following command in command line.
+This will generate report.html file for tests result in HTML format on the test source folder. 
 ```python
 pip install -r requirements.txt
 ```
 
+To run use the following command run from the cloned directory:
+```python
+pytest -v testCasesGoogle.py --html=report.html
 
+if you want to run specific test:
+pytest -v testCasesGoogle.py::<pytest marked class name>
+
+ex) pytest -v testCasesGoogle.py::Test_Google_Pages
+
+if you want to run tests with specific web browser:
+pytest -v -k <'chrome'|'firefox'> testCasesGoogle.py --html=report.html 
+
+```
+
+Important Source Code Breakdown:
+```python 
+confest.py 
+  - Configuration for pre-tests loading. Using fixture, this will load appropriate web-browser at the beginning of the
+   tests(class), and close it at the end of the tests(class)
+
+testCasesGoogle.py
+  - pytest is run against these test files. 
+  - It contains tests cases by class, and methods named start with test_*.
+  - This uses webDriver instance from fixture (request driver in confest.py), test variables from constants.py 
+  
+constants.py
+  - class object contains defined string, numbers, and variables for test cases. 
+  
+report.html 
+  - Generated test report by --html=<filename> option.
+```python
