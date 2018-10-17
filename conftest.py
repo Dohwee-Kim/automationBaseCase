@@ -10,7 +10,10 @@ def driver_init(request):
     '''
     Returns a webDriver instance and close after each test classes 
     '''
-    webDriverHandler = webdriver.Chrome(executable_path=Constants.WEBDRIVER_CHROME_PATH)
+    try: 
+    	webDriverHandler = webdriver.Chrome(executable_path=Constants.WEBDRIVER_CHROME_PATH)
+    except WebDriverException: 
+    	print ("ERROR: Failed to start driver at " + Constants.WEBDRIVER_CHROME_PATH)
     webDriverHandler.maximize_window()
     request.cls.driver = webDriverHandler
 
