@@ -6,12 +6,12 @@ Basic case for Python automation
 This is a basic test automation examples for Google Homepage written in Python 3.7 using Selenium WebDriver and Pytest.
 If you use a Conda, please setup an environment with a specific version of Python 3.7. It might work with other 3.x versions but have not tested. 
 
-```python
+```
 conda create -n <env_name> python=3.7
 ```
 
 Requirements:
-```python
+```
 atomicwrites    1.2.1    
 attrs           18.2.0   
 certifi         2018.8.24
@@ -33,12 +33,12 @@ wheel           0.32.1
 
 You will need to install above the requirements first using following command in command line.
 This will generate report.html file for tests result in HTML format on the test source folder. 
-```python
+```
 pip install -r requirements.txt --ignore-installed
 ```
 
 To run use the following command run from the cloned directory:
-```python
+```
 pytest -v testCasesGoogle.py --html=report.html
 
 if you want to run specific test:
