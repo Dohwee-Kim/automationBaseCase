@@ -31,6 +31,15 @@ urllib3         1.23
 wheel           0.32.1  
 ```
 
+#Chrome and Gecko drivers!!
+Repository includes Mac OS 64 GeckoDriver for FireFox and ChromeDriver for Chrome. If you want to run this tests on different OS system, Please replace driver files.
+
+Here are download links:
+```
+Chrome Driver : https://chromedriver.storage.googleapis.com/index.html?path=2.43/
+Gecko Driver :https://github.com/mozilla/geckodriver/releases
+```
+
 You will need to install above the requirements first using following command in command line.
 This will generate report.html file for tests result in HTML format on the test source folder. 
 ```
