@@ -4,7 +4,7 @@ This Python script with Pytest is for simple webpage loading test
 Basic case for Python automation 
 
 This is a basic test automation examples for Google Homepage written in Python 3.7 using Selenium WebDriver and Pytest.
-If you use a Anaconda, setting up an clean environment with a specific version of Python 3.7 is recommended. It might work with other 3.x versions but have not tested. 
+If you use a Anaconda, setting up an clean environment with a specific version of Python 3.7 is recommended. It might work with other 3.7.x versions but have not tested. 
 
 ```
 conda create -n <env_name> python=3.7
